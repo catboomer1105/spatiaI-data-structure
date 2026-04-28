@@ -4,6 +4,12 @@ set_languages("c++17")
 set_encodings("utf-8")
 add_requires("raylib")
 
+target("quadtree")
+    set_kind("binary")
+    add_packages("raylib")
+    add_files("src/quadtree.cpp")
+
+
 target("octree")
     set_kind("binary")
     add_packages("raylib")
